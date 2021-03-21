@@ -33,7 +33,7 @@ export const Services = () => {
                 <img src={paintIndoor} alt=""/>
                 <h3>Bojanje interijera</h3>
               </Subtitle>
-              <p>Bojanje zidova sa svim potrebnim predradnjama - zaštita i izravnavanje zidnih površina gletanjem, brušenje i grundiranje.</p>
+              <p>Bojanje zidova sa svim potrebnim predradnjama - za&scaron;tita i izravnavanje zidnih povr&#x00160;ina gletanjem, bru&#x00160;enje i grundiranje.</p>
             </li>
             <li>
               <Subtitle>
