@@ -2,9 +2,28 @@ import { createGlobalStyle } from 'styled-components';
 
 export const Global = createGlobalStyle`
   html {
-    font-family: 'Roboto', Helvetica, sans-serif;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
+    /* font-family: 'Roboto', Helvetica, sans-serif; */
+    /* -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%; */
+    
+    /* color pallette */
+    --dark: #433e4c;
+    --gold: #a37d2d;
+    --light: #f6f7f9;
+    --warn: #df2935;
+    --grey: #a7a7a7;
+
+    color: var(--dark);
+
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    a,
+    small {
+      color: var(--dark);
+    }
 
     article,
     aside,
@@ -58,43 +77,43 @@ export const Global = createGlobalStyle`
     dfn {
       font-style: italic;
     }
-    h1 {
+    /* h1 {
       font-size: 2em;
       margin: 0.67em 0;
-    }
+    } */
     mark {
       background-color: #ff0;
       color: #000;
     }
-    small {
+    /* small {
       font-size: 80%;
-    }
-    sub,
+    } */
+    /* sub,
     sup {
       font-size: 75%;
       line-height: 0;
       position: relative;
       vertical-align: baseline;
-    }
-    sub {
+    } */
+    /* sub {
       bottom: -0.25em;
-    }
-    sup {
+    } */
+    /* sup {
       top: -0.5em;
-    }
+    } */
     img {
       border-style: none;
     }
     svg:not(:root) {
       overflow: hidden;
     }
-    code,
+    /* code,
     kbd,
     pre,
     samp {
       font-family: monospace, monospace;
       font-size: 1em;
-    }
+    } */
     figure {
       margin: 1em 40px;
     }
@@ -182,11 +201,11 @@ export const Global = createGlobalStyle`
       -webkit-appearance: button;
       font: inherit;
     }
-    html {
+    /* html {
       font: 112.5%/1.45em georgia, serif;
       box-sizing: border-box;
       overflow-y: scroll;
-    }
+    } */
     * {
       box-sizing: inherit;
     }
@@ -206,8 +225,12 @@ export const Global = createGlobalStyle`
       padding-right: 0;
       padding-top: 0;
       margin-bottom: 1.45rem;
+
+
+      box-shadow: 0 50px 100px -20px rgba(50,50,93,0.25),0 30px 60px -30px rgba(0,0,0,0.3);
+      filter: saturate(150%);
     }
-    h1 {
+    /* h1 {
       margin-left: 0;
       margin-right: 0;
       margin-top: 0;
@@ -296,7 +319,7 @@ export const Global = createGlobalStyle`
       text-rendering: optimizeLegibility;
       font-size: 0.78405rem;
       line-height: 1.1;
-    }
+    } */
     hgroup {
       margin-left: 0;
       margin-right: 0;
@@ -307,7 +330,7 @@ export const Global = createGlobalStyle`
       padding-top: 0;
       margin-bottom: 1.45rem;
     }
-    ul {
+    /* ul {
       margin-left: 1.45rem;
       margin-right: 0;
       margin-top: 0;
@@ -318,7 +341,7 @@ export const Global = createGlobalStyle`
       margin-bottom: 1.45rem;
       list-style-position: outside;
       list-style-image: none;
-    }
+    } */
     ol {
       margin-left: 1.45rem;
       margin-right: 0;
@@ -351,7 +374,7 @@ export const Global = createGlobalStyle`
       padding-top: 0;
       margin-bottom: 1.45rem;
     }
-    p {
+    /* p {
       margin-left: 0;
       margin-right: 0;
       margin-top: 0;
@@ -360,7 +383,7 @@ export const Global = createGlobalStyle`
       padding-right: 0;
       padding-top: 0;
       margin-bottom: 1.45rem;
-    }
+    } */
     figure {
       margin-left: 0;
       margin-right: 0;
@@ -422,7 +445,7 @@ export const Global = createGlobalStyle`
       padding-top: 0;
       margin-bottom: 1.45rem;
     }
-    form {
+    /* form {
       margin-left: 0;
       margin-right: 0;
       margin-top: 0;
@@ -431,7 +454,7 @@ export const Global = createGlobalStyle`
       padding-right: 0;
       padding-top: 0;
       margin-bottom: 1.45rem;
-    }
+    } */
     noscript {
       margin-left: 0;
       margin-right: 0;
@@ -452,7 +475,7 @@ export const Global = createGlobalStyle`
       padding-top: 0;
       margin-bottom: 1.45rem;
     }
-    hr {
+    /* hr {
       margin-left: 0;
       margin-right: 0;
       margin-top: 0;
@@ -464,7 +487,7 @@ export const Global = createGlobalStyle`
       background: hsla(0, 0%, 0%, 0.2);
       border: none;
       height: 1px;
-    }
+    } */
     address {
       margin-left: 0;
       margin-right: 0;
@@ -487,7 +510,7 @@ export const Global = createGlobalStyle`
     th {
       font-weight: bold;
     }
-    li {
+    /* li {
       margin-bottom: calc(1.45rem / 2);
     }
     ol li {
@@ -517,7 +540,7 @@ export const Global = createGlobalStyle`
     }
     li > p {
       margin-bottom: calc(1.45rem / 2);
-    }
+    } */
     code {
       font-size: 0.85rem;
       line-height: 1.45rem;
@@ -571,8 +594,8 @@ export const Global = createGlobalStyle`
     code {
       background-color: hsla(0, 0%, 0%, 0.04);
       border-radius: 3px;
-      font-family: 'SFMono-Regular', Consolas, 'Roboto Mono', 'Droid Sans Mono',
-        'Liberation Mono', Menlo, Courier, monospace;
+      /* font-family: 'SFMono-Regular', Consolas, 'Roboto Mono', 'Droid Sans Mono',
+        'Liberation Mono', Menlo, Courier, monospace; */
       padding: 0;
       padding-top: 0.2em;
       padding-bottom: 0.2em;
@@ -594,19 +617,21 @@ export const Global = createGlobalStyle`
     pre tt:after {
       content: '';
     }
-    @media only screen and (max-width: 480px) {
+    /* @media only screen and (max-width: 480px) {
       html {
         font-size: 100%;
       }
-    }
+    } */
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Roboto', Helvetica, sans-serif;
-      color: ${({ theme }) => (theme === 'light' ? 'hsla(0, 0%, 0%, 0.8)' : '#fff')};
-      background-color: ${({ theme }) => (theme === 'light' ? '#fff' : '#212121')};
+      /* font-family: 'Roboto', Helvetica, sans-serif; */
+      /* color: ${({ theme }) => (theme === 'light' ? 'hsla(0, 0%, 0%, 0.8)' : '#fff')}; */
+      /* background-color: ${({ theme }) => (theme === 'light' ? '#fff' : '#212121')}; */
+
+      background-color: #fff;
       transition: .3s all;
-      font-weight: normal;
+      /* font-weight: normal; */
       word-wrap: break-word;
       font-kerning: normal;
       -moz-font-feature-settings: 'kern', 'liga', 'clig', 'calt';

@@ -1,12 +1,12 @@
 import styled from 'styled-components';
-import overlayIllustration from 'assets/illustrations/overlay.svg';
+
+import introbottomleft from 'assets/illustrations/introleft2.svg';
+import photo2 from 'assets/photos/photo-3.png';
 
 export const Wrapper = styled.div`
   padding-bottom: 4rem;
-  background-image: url(${overlayIllustration});
-  background-size: contain;
-  background-position: right top;
-  background-repeat: no-repeat;
+  background: url(${introbottomleft}) right bottom no-repeat, url(${photo2}) left bottom no-repeat;
+  background-size: 100%;
 `;
 
 export const IntroWrapper = styled.div`
@@ -17,24 +17,26 @@ export const IntroWrapper = styled.div`
 
   @media (max-width: 960px) {
     flex-direction: column;
+    padding: 4rem 0 0;
   }
 `;
 
 export const Details = styled.div`
   flex: 1;
+  padding-right: 5rem;
 
   @media (max-width: 960px) {
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
+    padding: 0;
   }
 
   h1 {
-    margin-bottom: 2rem;
-    font-size: 36pt;
-    color: ${({ theme }) => (theme === 'light' ? '#212121' : '#fff')};
+    margin: 0 0 2.5rem 0;
+    font-size: 48px;
 
     @media (max-width: 960px) {
-      mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
+      margin: 0 0 2rem 0;
     }
 
     @media (max-width: 680px) {
@@ -42,24 +44,20 @@ export const Details = styled.div`
     }
   }
 
-  h4 {
-    margin-bottom: 2.5rem;
-    font-size: 32pt;
-    font-weight: normal;
-    color: ${({ theme }) => (theme === 'light' ? '#707070' : '#e6e6e6')};
+  h2 {
+    margin: 0 0 1rem 0;
+    font-size: 21px;
 
     @media (max-width: 960px) {
-      mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
-    }
-
-    @media (max-width: 680px) {
-      font-size: 26pt;
+      margin: 0 0 0.5rem 0;
+      font-size: 19px;
     }
   }
 `;
 
 export const Thumbnail = styled.div`
   flex: 1;
+  position: relative;
 
   @media (max-width: 960px) {
     width: 100%;
@@ -67,5 +65,21 @@ export const Thumbnail = styled.div`
 
   img {
     width: 100%;
+    margin-bottom: 0;
+  }
+
+  img:first-child {
+    filter: grayscale();
+  }
+
+  img:nth-child(2) {
+    position: absolute;
+    top: 5rem;
+    right: 4rem;
+
+    @media (max-width: 960px) {
+      top: 2rem;
+      right: 0.5rem;
+    }
   }
 `;

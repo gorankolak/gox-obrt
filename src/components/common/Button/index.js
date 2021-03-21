@@ -13,7 +13,17 @@ export const Button = styled.button`
   -ms-user-select: none;
   user-select: none;
   color: #fff;
-  background: #0074d9;
+  background: var(--gold);
+  border: 2px solid var(--gold);
+  text-shadow: none;
+  box-shadow: 0 20px 30px 0 rgb(12 0 46 / 10%);
+  transition: all .2s linear;
+
+  &:hover {
+    background-color: #fff;
+    color: var(--gold);
+    border: 2px solid var(--gold);
+  }
 
   &:focus {
     outline: none;
@@ -22,10 +32,4 @@ export const Button = styled.button`
   &:disabled {
     background: gray;
   }
-
-  ${({ secondary }) =>
-    secondary &&
-    `
-		background: #001F3F;
-	`}
 `;

@@ -8,9 +8,13 @@ export const Wrapper = styled.div`
 `;
 
 export const Brand = styled.a`
-  color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
+  box-shadow: none;
+  background-image: none;
 
-  @media (max-width: 960px) {
-    mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
+  max-height: 49px;
+
+  img {
+    max-width: 100px;
+    margin-bottom: 0;
   }
 `;

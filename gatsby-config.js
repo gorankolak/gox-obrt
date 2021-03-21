@@ -15,16 +15,22 @@ module.exports = {
     'gatsby-plugin-styled-components',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
+    // {
+    //   resolve: 'gatsby-source-graphql',
+    //   options: {
+    //     typeName: 'GitHub',
+    //     fieldName: 'github',
+    //     url: 'https://api.github.com/graphql',
+    //     headers: {
+    //       Authorization: `bearer ${process.env.GATSBY_PORTFOLIO_GITHUB_TOKEN}`,
+    //     },
+    //     fetchOptions: {},
+    //   },
+    // },
     {
-      resolve: 'gatsby-source-graphql',
+      resolve: `gatsby-plugin-typography`,
       options: {
-        typeName: 'GitHub',
-        fieldName: 'github',
-        url: 'https://api.github.com/graphql',
-        headers: {
-          Authorization: `bearer ${process.env.GATSBY_PORTFOLIO_GITHUB_TOKEN}`,
-        },
-        fetchOptions: {},
+        pathToConfigModule: `src/utils/typography`,
       },
     },
     {
@@ -32,6 +38,13 @@ module.exports = {
       options: {
         color: config.themeColor,
         showSpinner: false,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/assets/gallery`,
+        name: `assets`,
       },
     },
     {
@@ -44,7 +57,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-favicon',
       options: {
-        logo: './static/favicon/favicon-512.png',
+        logo: './static/favicon/gox-logo-favicon.png',
         injectHTML: true,
         icons: {
           android: true,
@@ -68,7 +81,7 @@ module.exports = {
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
         display: 'minimal-ui',
-        icon: './static/favicon/favicon-512.png',
+        icon: './static/favicon/gox-logo-favicon.png',
       },
     },
     'gatsby-plugin-offline',

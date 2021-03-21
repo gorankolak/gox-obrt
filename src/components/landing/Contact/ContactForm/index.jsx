@@ -56,7 +56,7 @@ export default () => (
             name="name"
             component="input"
             aria-label="name"
-            placeholder="Full name*"
+            placeholder="Ime*"
             error={touched.name && errors.name}
           />
           <ErrorMessage component={Error} name="name" />
@@ -83,7 +83,7 @@ export default () => (
             rows="8"
             type="text"
             name="message"
-            placeholder="Message*"
+            placeholder="Vaša poruka*"
             error={touched.message && errors.message}
           />
           <ErrorMessage component={Error} name="message" />
@@ -108,7 +108,7 @@ export default () => (
         )}
         <Center>
           <Button secondary type="submit" disabled={isSubmitting}>
-            Submit
+            Pošalji
           </Button>
         </Center>
       </Form>

@@ -1,31 +1,39 @@
 import React from 'react';
 import { Container } from 'components/common';
-import { Wrapper, Flex, Links, Details } from './styles';
-import social from './social.json';
+import { Wrapper, Flex, BottomFooter, Details } from './styles';
+// import social from './social.json';
+
+import email from 'assets/icons/email-darkfinal.svg';
+import facebook from 'assets/icons/facebook-darkfinal.svg';
 
 export const Footer = () => (
   <Wrapper>
     <Flex as={Container}>
       <Details>
-        <h2>John Doe</h2>
-        <span>
-          © All rights are reserved | {new Date().getFullYear()} | Made with{' '}
-          <span aria-label="love" role="img">
-            💖
-          </span>{' '}
-          by{' '}
-          <a href="https://smakosh.com/?ref=portfolio-dev" rel="noopener noreferrer" target="_blank">
-            Smakosh
-          </a>
-        </span>
+        <h3>GOX</h3>
+        <p>Obrt za završne radove u građevinarstvu <br/> vl. Goran Mamić<br/> Sunčana 9, 31403 Široko polje <br/>E: <a href="mailto:gox.obrt@gmail.com" rel="noopener noreferrer" target="_blank">gox.obrt@gmail.com</a></p>
       </Details>
-      <Links>
-        {social.map(({ id, name, link, icon }) => (
-          <a key={id} href={link} target="_blank" rel="noopener noreferrer" aria-label={`follow me on ${name}`}>
-            <img width="24" src={icon} alt={name} />
+
+      <BottomFooter>
+        <div>
+          <small>
+            © Sva prava pridržana. | {new Date().getFullYear()} | Website
+            by{' '}
+            <a href="mailto:goran.kolak82@gmail.com" rel="noopener noreferrer" target="_blank">
+              GK.
+            </a>
+          </small>
+        </div>
+
+        <div>
+          <a href="mailto:gox.obrt@gmail.com" target="_blank" rel="noopener noreferrer">
+            <img width="40" src={email} alt="email"/>
           </a>
-        ))}
-      </Links>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <img width="25" src={facebook} alt="facebook"/>
+          </a>
+        </div>
+      </BottomFooter>
     </Flex>
   </Wrapper>
 );

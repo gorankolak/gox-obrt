@@ -31,10 +31,13 @@ export const Wrapper = styled.div`
 `;
 
 export const Bar = styled.div`
-	width: 1.6rem;
+	/* width: 1.6rem;
 	height: .15rem;
-	margin-bottom: .3rem;
-	background-color: #212121;
+  margin-bottom: .3rem; */
+  width: 50px;
+  height: 2px;
+  margin-bottom: 5px;
+	background-color: var(--dark);
 	transition: transform 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91),
 	opacity 500ms,
 	box-shadow 250ms,
@@ -48,7 +51,7 @@ export const Bar = styled.div`
     top &&
     sidebar &&
 		`
-		background-color: ${(theme === 'light' ? '#212121' : '#fff')};
+    background-color: var(--dark);
 		transform: translateY(8px) rotate(-135deg);
 		
 	`}
@@ -64,7 +67,7 @@ export const Bar = styled.div`
     bottom &&
     sidebar &&
 		`
-			background-color: ${(theme === 'light' ? '#212121' : '#fff')};
+      background-color: var(--dark);
 			transform: translateY(-6px) rotate(-45deg);
 	`}
 `;
