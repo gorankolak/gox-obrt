@@ -31,10 +31,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Bar = styled.div`
-	/* width: 1.6rem;
-	height: .15rem;
-  margin-bottom: .3rem; */
-  width: 50px;
+  width: 25px;
   height: 2px;
   margin-bottom: 5px;
 	background-color: var(--dark);

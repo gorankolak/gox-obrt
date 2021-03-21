@@ -40,7 +40,8 @@ export const Details = styled.div`
     }
 
     @media (max-width: 680px) {
-      font-size: 30pt;
+      /* font-size: 30pt; */
+      font-size: 38px;
     }
   }
 
