@@ -3,7 +3,7 @@ import footersecond from 'assets/illustrations/footerright.svg';
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  padding: 4rem 0 4rem 0;
+  padding: 5rem 0 4rem 0;
   background-image: url(${footerIllustration}), url(${footersecond});
   background-size: cover;
   background-position: left top;

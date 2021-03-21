@@ -31,7 +31,7 @@ export const Wrapper = styled.div`
 
 			a {
           margin-right: 1rem;
-          font-size: 19px;
+          font-size: 17px;
           font-weight: 700;
 
 					&:last-child {

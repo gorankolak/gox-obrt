@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Contactwrapper = styled.div`
-  padding: 4rem 0 2rem;
+  padding: 4rem 0 0;
   display: flex;
   align-items: center;
   justify-content: space-between;

@@ -49,7 +49,7 @@ export const Details = styled.div`
     font-size: 21px;
 
     @media (max-width: 960px) {
-      margin: 0 0 0.5rem 0;
+      /* margin: 0 0 0.5rem 0; */
       font-size: 19px;
     }
   }
@@ -74,8 +74,8 @@ export const Thumbnail = styled.div`
 
   img:nth-child(2) {
     position: absolute;
-    top: 5rem;
-    right: 4rem;
+    top: 4rem;
+    right: 3rem;
 
     @media (max-width: 960px) {
       top: 2rem;

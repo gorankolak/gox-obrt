@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
 `;
 
 export const SkillsWrapper = styled.div`
-  padding: 3rem 0 4rem;
+  padding: 3rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
