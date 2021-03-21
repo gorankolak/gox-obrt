@@ -20,7 +20,7 @@ export const Footer = () => (
             © Sva prava pridržana. | {new Date().getFullYear()} | Website
             by{' '}
             <a href="mailto:goran.kolak82@gmail.com" rel="noopener noreferrer" target="_blank">
-              GK.
+              GKO Media.
             </a>
           </small>
         </div>

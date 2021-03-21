@@ -26,21 +26,3 @@
     url('./fonts/roboto-v18-latin-700.ttf') format('truetype'),
     url('./fonts/roboto-v18-latin-700.svg#Roboto') format('svg');
 }
-
-@font-face {
-  font-family: 'Crimson Text';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/CrimsonText-Regular.ttf');
-  src: local(''),
-       url('../fonts/CrimsonText-Regular.ttf') format('truetype'),
-}
-
-@font-face {
-  font-family: 'Crimson Text';
-  font-style: bold;
-  font-weight: 700;
-  src: url('../fonts/CrimsonText-Bold.ttf');
-  src: local(''),
-       url('../fonts/CrimsonText-Bold.ttf') format('truetype'),
-}
