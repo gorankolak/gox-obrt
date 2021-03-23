@@ -7,12 +7,21 @@ import { Button, Input } from 'components/common';
 import { Error, Center, InputField } from './styles';
 
 export default () => (
-      <form name="contact" method="POST" data-netlify="true">
-          <Input type="text" name="name" placeholder="Ime"/>
-          <Input type="email" name="email" placeholder="Email"/>
-          <Input type="text" name="message" placeholder="Vaša poruka"/>
+      // <form name="contact" method="POST" data-netlify="true">
+      //     <Input type="text" name="name" placeholder="Ime"/>
+      //     <Input type="email" name="email" placeholder="Email"/>
+      //     <Input type="text" name="message" placeholder="Vaša poruka"/>
 
-          <Button type="submit">Send</Button>
+      //     <Button type="submit">Send</Button>
+      // </form>
+
+      <form name="Contact Form" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="Contact Form" />
+        <Input type="text" name="name" placeholder="Ime"/>
+        <Input type="email" name="email" placeholder="Email"/>
+        <Input type="text" name="message" placeholder="Vaša poruka"/>
+
+        <Button type="submit">Send</Button>
       </form>
   // <Formik
   //   initialValues={{
