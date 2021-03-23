@@ -19,6 +19,6 @@ export default () => (
       <InputField>
         <Textarea rows="8" type="text" name="message" placeholder="Vaša poruka" required/>
       </InputField>
-      <Button type="submit">Send</Button>
+      <Button type="submit">Pošalji</Button>
     </form>
 );
