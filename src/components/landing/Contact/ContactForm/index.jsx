@@ -48,7 +48,7 @@ export default () => (
     }}
   >
     {({ values, touched, errors, setFieldValue, isSubmitting }) => (
-      <Form name="contact" method="POST" data-netlify="true">
+      <Form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
         <InputField>
           <Input
             as={FastField}
