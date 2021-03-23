@@ -11,7 +11,7 @@ export const Footer = () => (
     <Flex as={Container}>
       <Details>
         <h3>GOX</h3>
-        <p>Obrt za završne radove u građevinarstvu <br/> vl. Goran Mamić<br/> Sunčana 9, 31403 Široko polje <br/>E: <a href="mailto:gox.obrt@gmail.com" rel="noopener noreferrer" target="_blank">gox.obrt@gmail.com</a></p>
+        <p>Obrt za završne radove u građevinarstvu <br/> vl. Goran Mamić<br/> Sunčana 9, Široko Polje, 31431 Čepin<br/>E: <a href="mailto:gox.obrt@gmail.com" rel="noopener noreferrer" target="_blank">gox.obrt@gmail.com</a></p>
       </Details>
 
       <BottomFooter>
